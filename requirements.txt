@@ -1,12 +1,10 @@
-# requirements.txt for reddit_hotlist_v9_ai.py
 fastapi
 uvicorn[standard]
 requests
-praw
-prawcore
+asyncpraw
+aiohttp
 numpy
 pandas
 yfinance
 nltk
 python-dotenv
-openai
