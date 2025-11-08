@@ -22,3 +22,5 @@ env/
 # IDE settings
 .vscode/
 .idea/
+
+trade_performance.json
