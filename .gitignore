@@ -1,0 +1,24 @@
+# Keep secrets private
+.env
+*.env
+
+# Python cache and build files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Logs and temporary data
+*.log
+*.tmp
+*.json
+
+# IDE settings
+.vscode/
+.idea/
