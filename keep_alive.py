@@ -1,34 +1,31 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-"""
-keep_alive.py
-Tiny Flask app for Render to ping.
-
-- GET /health  -> "ok"
-- POST/GET /run -> triggers one v9 cycle (non-overlapping)
-"""
-
-import os
-from flask import Flask, jsonify
-from reddit_hotlist_v9_ai import run_cycle
+# keep_alive.py
+from flask import Flask
+from threading import Thread
+import os, time
+from reddit_hotlist_v9_0_ai import run_cycle  # import your main bot function
 
 app = Flask(__name__)
 
-@app.get("/health")
-def health():
-    return jsonify({"status":"ok"})
+@app.route('/')
+def home():
+    return "🚀 Reddit Hotlist v9 is live and running hourly!"
 
-@app.get("/")
-def root():
-    return jsonify({"service":"reddit_hotlist_v9", "status":"ready"})
+def run_bot():
+    while True:
+        print("🕐 Running hourly Reddit Hotlist scan...")
+        try:
+            run_cycle()  # this runs your full bot logic
+            print("✅ Cycle complete. Sleeping for 1 hour...")
+        except Exception as e:
+            print(f"❌ Error during run_cycle: {e}")
+        time.sleep(3600)  # wait 1 hour (3600 seconds)
 
-@app.post("/run")
-@app.get("/run")
-def run():
-    status = run_cycle()
-    return jsonify({"result": status})
+def keep_alive():
+    # Start Flask server (so Render + UptimeRobot see it as active)
+    Thread(target=lambda: app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 10000)))).start()
+    # Start the trading bot in a background thread
+    Thread(target=run_bot).start()
 
 if __name__ == "__main__":
-    # for local quick test: python keep_alive.py
-    app.run(host="0.0.0.0", port=int(os.getenv("PORT", "8080")), debug=False)
+    keep_alive()
+
