@@ -9,3 +9,4 @@ yfinance
 nltk
 python-dotenv
 flask
+praw
