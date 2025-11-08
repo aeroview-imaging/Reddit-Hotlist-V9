@@ -8,3 +8,4 @@ pandas
 yfinance
 nltk
 python-dotenv
+flask
