@@ -1,0 +1,417 @@
+{
+  "INTS": {
+    "entry": 0.675,
+    "stop": 0.5864,
+    "take": 0.935,
+    "confidence": 85,
+    "date": "2025-11-02T16:42:49.059717",
+    "status": "loss",
+    "summary_ai": "On November 2, 2025, INTS opened at $0.6750 but struggled to gain traction throughout the day. By 10:30 AM ET, the stock faced increasing selling pressure, with volume spiking as it dipped below the stop loss of $0.5864. Despite a brief attempt to rally around noon, the momentum fizzled out, leading to a final close well below the target of $0.9350. Traders who entered the position faced a disappointing outcome as the stock ultimately settled down, reflecting a challenging trading environment. \ud83d\udd3b\ud83d\udc94\ud83d\udcc9\n\n(Result: \u274c -13.13% loss)"
+  },
+  "CTM": {
+    "entry": 1.1814,
+    "stop": 1.0696,
+    "take": 1.4407,
+    "date": "2025-11-07T22:20:12.889164+00:00",
+    "status": "win",
+    "zone": "\ud83d\udfe2 prime",
+    "features": {
+      "RSI": 57.92,
+      "Volx20d": 1.03,
+      "Composite": 0.893
+    }
+  },
+  "SOFI": {
+    "entry": 29.63,
+    "stop": 27.8,
+    "take": 33.0,
+    "confidence": 85,
+    "date": "2025-11-02T06:03:14.644329",
+    "status": "loss",
+    "summary_ai": "On November 2, 2025, SOFI opened at $29.63, but the momentum quickly shifted against the trade. By mid-morning, selling pressure intensified, pushing the stock down to the stop loss at $27.80. Despite a brief recovery attempt around noon, the bears maintained control, leading to a disappointing close at $27.80. The volume was notably high, indicating strong bearish sentiment throughout the day. \ud83d\udd3b\ud83d\udc94\ud83d\udcc9 \n\n(Result: \u274c -6.18% loss)"
+  },
+  "APLD": {
+    "entry": 34.64,
+    "stop": 32.14,
+    "take": 40.64,
+    "confidence": 85,
+    "date": "2025-11-02T16:42:48.270890",
+    "status": "loss",
+    "summary_ai": "On November 2, 2025, APLD opened at $34.64, showing initial promise but quickly lost momentum. By 10:30 AM ET, the stock faced heavy selling pressure, dropping below the stop loss of $32.14. Despite a brief attempt to recover around noon, the bearish trend continued, ultimately leading to a close at $32.14. Traders noted increased volume during the downturn, signaling a lack of buyer interest. The day ended on a disappointing note for bulls, as the target of $40.64 remained unachieved. \ud83d\udd3b\ud83d\udc94\ud83d\udcc9  \n(Result: \u274c -7.22% loss)"
+  },
+  "FEMY": {
+    "entry": 0.7537,
+    "stop": 0.6389,
+    "take": 1.0324,
+    "date": "2025-11-07T05:29:14.689702+00:00",
+    "status": "win",
+    "zone": "\ud83d\udfe2 prime",
+    "features": {
+      "RSI": 60.53,
+      "Volx20d": 0.59,
+      "Composite": 0.884
+    },
+    "closed_at": "2025-11-08T17:37:24.098812+00:00",
+    "ticker": "FEMY",
+    "summary_ai": "On November 7, 2025, FEMY opened at $0.7537 and quickly gained momentum, reaching the target of $1.0324 by 11:30 AM ET. The stock demonstrated strong buying interest throughout the morning, allowing it to surpass the entry point without hitting the stop loss at $0.6389. By midday, the bullish trend was evident, and traders capitalized on the upward movement. This successful trade culminated in a notable profit of 36.98%, showcasing the potential of strategic entry and exit points. \ud83d\ude80\ud83d\udcc8  \n(Result: \u2705 +36.98% gain)"
+  },
+  "CSAI": {
+    "entry": 1.8705,
+    "stop": 1.7431,
+    "take": 2.3705,
+    "confidence": 85,
+    "date": "2025-11-04T01:33:39.749753",
+    "status": "loss",
+    "zone": "prime",
+    "features": {
+      "RSI": 63.8,
+      "Volx20d": 2.82,
+      "Composite": 1.015,
+      "Sent": 0.282,
+      "Tech": 0.617,
+      "Mentions": 62
+    },
+    "policy": {
+      "conf_prime": 80,
+      "conf_warm": 75,
+      "warm_vol_min": 5.0,
+      "warm_vol_max": 20.0,
+      "rr_target": 2.0
+    },
+    "summary_ai": "On November 4, 2025, CSAI opened at $1.8705, but the day quickly turned sour. By midday, despite some initial bullish momentum, the stock struggled to maintain its upward trajectory, ultimately hitting a low of $1.7431, triggering the stop loss. Volume remained tepid throughout the session, indicating a lack of strong buying interest. The trade concluded with a disappointing loss, leaving traders feeling the sting of missed potential. \ud83d\udd3b\ud83d\udc94\ud83d\udcc9  \n(Result: \u274c -6.81% loss)"
+  },
+  "KVUE": {
+    "entry": 16.25,
+    "stop": 15.3,
+    "take": 18.25,
+    "confidence": 85,
+    "date": "2025-11-04T01:33:40.057861",
+    "status": "open",
+    "zone": "prime",
+    "features": {
+      "RSI": 53.47,
+      "Volx20d": 4.69,
+      "Composite": 0.908,
+      "Sent": 0.121,
+      "Tech": 0.488,
+      "Mentions": 46
+    },
+    "policy": {
+      "conf_prime": 80,
+      "conf_warm": 75,
+      "warm_vol_min": 5.0,
+      "warm_vol_max": 20.0,
+      "rr_target": 2.0
+    }
+  },
+  "NUAI": {
+    "entry": 5.82,
+    "stop": 4.49,
+    "take": 8.36,
+    "confidence": 85,
+    "date": "2025-11-05T01:20:28.740151",
+    "status": "open",
+    "zone": "prime",
+    "features": {
+      "RSI": 64.26,
+      "Volx20d": 0.35,
+      "Composite": 0.948,
+      "Sent": 0.39,
+      "Tech": 0.59,
+      "Mentions": 35
+    },
+    "policy": {
+      "conf_prime": 80,
+      "conf_warm": 75,
+      "warm_vol_min": 5.0,
+      "warm_vol_max": 20.0,
+      "rr_target": 2.0
+    }
+  },
+  "MSAI": {
+    "entry": 1.3401,
+    "stop": 1.1977,
+    "take": 1.4879,
+    "confidence": 85,
+    "date": "2025-11-06T23:25:40.928694",
+    "status": "loss",
+    "zone": "prime",
+    "features": {
+      "RSI": 57.48,
+      "Volx20d": 0.56,
+      "Composite": 0.93,
+      "Sent": 0.174,
+      "Tech": 0.533,
+      "Mentions": 46
+    },
+    "policy": {
+      "conf_prime": 80,
+      "conf_warm": 75,
+      "warm_vol_min": 5.0,
+      "warm_vol_max": 20.0,
+      "rr_target": 2.0
+    },
+    "summary_ai": "On November 6, 2025, MSAI opened at $1.3401 but struggled to maintain momentum throughout the trading day. By 10:15 AM ET, the stock dipped below the entry point, triggering a downward trend that led to a stop loss at $1.1977 by 1:30 PM ET. Despite hopes for a rebound towards the target of $1.4879, MSAI closed the day at a disappointing low. The trade resulted in a loss of 10.63%, leaving traders feeling deflated. \ud83d\udcc9\ud83d\ude1e  \n(Result: \u274c -10.63% loss)"
+  },
+  "NFE": {
+    "entry": 1.37,
+    "stop": 1.19,
+    "take": 1.63,
+    "confidence": 85,
+    "date": "2025-11-05T01:20:31.781829",
+    "status": "open",
+    "zone": "warm",
+    "features": {
+      "RSI": 37.11,
+      "Volx20d": 5.49,
+      "Composite": 1.087,
+      "Sent": 0.195,
+      "Tech": 0.2,
+      "Mentions": 236
+    },
+    "policy": {
+      "conf_prime": 80,
+      "conf_warm": 75,
+      "warm_vol_min": 5.0,
+      "warm_vol_max": 20.0,
+      "rr_target": 2.0
+    }
+  },
+  "HTZ": {
+    "entry": 6.5,
+    "stop": 5.9,
+    "take": 7.5,
+    "confidence": 85,
+    "date": "2025-11-05T01:20:32.411321",
+    "status": "open",
+    "zone": "warm",
+    "features": {
+      "RSI": 65.98,
+      "Volx20d": 8.11,
+      "Composite": 0.934,
+      "Sent": 0.209,
+      "Tech": 0.645,
+      "Mentions": 37
+    },
+    "policy": {
+      "conf_prime": 80,
+      "conf_warm": 75,
+      "warm_vol_min": 5.0,
+      "warm_vol_max": 20.0,
+      "rr_target": 2.0
+    }
+  },
+  "SNAP": {
+    "entry": 7.98,
+    "stop": 7.65,
+    "take": 8.66,
+    "confidence": 85,
+    "date": "2025-11-06T23:25:39.647336",
+    "status": "open",
+    "zone": "prime",
+    "features": {
+      "RSI": 53.64,
+      "Volx20d": 2.99,
+      "Composite": 1.008,
+      "Sent": 0.105,
+      "Tech": 0.49,
+      "Mentions": 94
+    },
+    "policy": {
+      "conf_prime": 80,
+      "conf_warm": 75,
+      "warm_vol_min": 5.0,
+      "warm_vol_max": 20.0,
+      "rr_target": 2.0
+    }
+  },
+  "CIFR": {
+    "entry": 21.0287,
+    "stop": 18.167,
+    "take": 27.9784,
+    "date": "2025-11-07T05:09:50.282746+00:00",
+    "status": "open",
+    "zone": "\ud83d\udfe2 prime",
+    "features": {
+      "RSI": 62.47,
+      "Volx20d": 0.94,
+      "Composite": 0.841
+    }
+  },
+  "NRDS": {
+    "entry": 11.8819,
+    "stop": 11.4698,
+    "take": 12.8828,
+    "date": "2025-11-07T05:09:51.589993+00:00",
+    "status": "win",
+    "zone": "\ud83d\udfe2 prime",
+    "features": {
+      "RSI": 62.42,
+      "Volx20d": 1.57,
+      "Composite": 0.794
+    },
+    "closed_at": "2025-11-08T17:37:30.516040+00:00",
+    "ticker": "NRDS",
+    "summary_ai": "On November 7, 2025, NRDS opened at $11.88, and after a steady climb throughout the morning, it hit the target of $12.88 around 2:30 PM ET. The stock showed strong momentum, breaking through resistance levels and maintaining bullish sentiment. With a well-placed stop at $11.47, the trade remained secure, allowing for a confident hold until the target was reached. The successful execution resulted in a solid gain, showcasing the effectiveness of the strategy. \ud83d\udcc8\ud83c\udf89  \n(Result: \u2705 +8.42% gain)"
+  },
+  "EOSE": {
+    "entry": 17.7982,
+    "stop": 15.8584,
+    "take": 22.509,
+    "date": "2025-11-07T22:20:15.651266+00:00",
+    "status": "loss",
+    "zone": "\ud83d\udfe2 prime",
+    "features": {
+      "RSI": 63.8,
+      "Volx20d": 1.62,
+      "Composite": 0.812
+    },
+    "closed_at": "2025-11-08T17:37:34.934715+00:00",
+    "ticker": "EOSE",
+    "summary_ai": "On November 7, 2025, EOSE opened at $17.80 but quickly faced selling pressure, dipping below the entry point. By 10:30 AM ET, the stock hit the stop loss at $15.86, triggering an exit from the position. Despite an initial target of $22.51, the bearish momentum led to a disappointing outcome. The trade concluded with a notable loss, reflecting the volatility of the market. \ud83d\udcc9\ud83d\ude1e  \n(Result: \u274c -10.9% loss)"
+  },
+  "ABL": {
+    "entry": 6.3416,
+    "stop": 5.8863,
+    "take": 7.4473,
+    "date": "2025-11-07T22:20:17.949353+00:00",
+    "status": "loss",
+    "zone": "\ud83d\udfe2 prime",
+    "features": {
+      "RSI": 61.88,
+      "Volx20d": 2.89,
+      "Composite": 0.747
+    },
+    "closed_at": "2025-11-08T17:37:39.702847+00:00",
+    "ticker": "ABL",
+    "summary_ai": "On November 7, 2025, ABL opened at $6.34 but quickly faced selling pressure, dipping below the entry point by 10:30 AM ET. The stock struggled to regain momentum throughout the day, ultimately hitting the stop loss at $5.89 around 2:15 PM ET. Despite a brief rally attempt in the afternoon, ABL closed the day lower, confirming a disappointing outcome for the trade. \ud83d\udcc9\ud83d\ude1e  \n(Result: \u274c -7.18% loss)"
+  },
+  "NUAI_20251107T230656_c5f93f": {
+    "ticker": "NUAI",
+    "entry": 5.1462,
+    "stop": 3.7972,
+    "take": 8.2731,
+    "date": "2025-11-07T23:06:56.634348+00:00",
+    "status": "open",
+    "zone": "\ud83d\udfe2 prime",
+    "features": {
+      "RSI": 58.23,
+      "Volx20d": 0.66,
+      "Composite": 0.983
+    }
+  },
+  "CTM_20251107T230658_ed2af1": {
+    "ticker": "CTM",
+    "entry": 1.1803,
+    "stop": 1.0619,
+    "take": 1.455,
+    "date": "2025-11-07T23:06:58.273683+00:00",
+    "status": "open",
+    "zone": "\ud83d\udfe2 prime",
+    "features": {
+      "RSI": 56.97,
+      "Volx20d": 1.03,
+      "Composite": 0.929
+    }
+  },
+  "BKYI_20251107T230659_d9d4e8": {
+    "ticker": "BKYI",
+    "entry": 0.9075,
+    "stop": 0.6787,
+    "take": 1.4632,
+    "date": "2025-11-07T23:06:59.059555+00:00",
+    "status": "open",
+    "zone": "\ud83d\udfe2 prime",
+    "features": {
+      "RSI": 61.14,
+      "Volx20d": 12.57,
+      "Composite": 0.905
+    }
+  },
+  "SNAP_20251107T230700_2e121b": {
+    "ticker": "SNAP",
+    "entry": 8.1482,
+    "stop": 7.7755,
+    "take": 9.0121,
+    "date": "2025-11-07T23:07:00.807142+00:00",
+    "status": "open",
+    "zone": "\ud83d\udfe2 prime",
+    "features": {
+      "RSI": 56.95,
+      "Volx20d": 1.2,
+      "Composite": 0.903
+    }
+  },
+  "LMFA_20251107T230701_0efd1f": {
+    "ticker": "LMFA",
+    "entry": 1.2377,
+    "stop": 1.103,
+    "take": 1.5498,
+    "date": "2025-11-07T23:07:01.540013+00:00",
+    "status": "loss",
+    "zone": "\ud83d\udfe2 prime",
+    "features": {
+      "RSI": 55.87,
+      "Volx20d": 0.86,
+      "Composite": 0.847
+    },
+    "closed_at": "2025-11-08T17:37:47.771230+00:00",
+    "summary_ai": "On November 7, 2025, LMFA opened at $1.2377, but the stock faced immediate selling pressure. By 10:15 AM ET, it dipped below the entry point, triggering a stop loss at $1.1030. Despite a brief recovery attempt around noon, the stock failed to reach the target of $1.5498, ultimately closing the day lower. The trade resulted in a disappointing loss, reflecting the volatility of the market. \ud83d\udcc9\ud83d\ude1e  \n(Result: \u274c -10.88% loss)"
+  },
+  "GAP_20251107T230702_0df2e2": {
+    "ticker": "GAP",
+    "entry": 23.294,
+    "stop": 22.293,
+    "take": 25.614,
+    "date": "2025-11-07T23:07:02.374982+00:00",
+    "status": "open",
+    "zone": "\ud83d\udfe2 prime",
+    "features": {
+      "RSI": 56.83,
+      "Volx20d": 0.79,
+      "Composite": 0.819
+    }
+  },
+  "MSAI_20251107T235133_97b53b": {
+    "ticker": "MSAI",
+    "entry": 1.0232,
+    "stop": 0.5003,
+    "take": 2.2355,
+    "date": "2025-11-07T23:51:33.996686+00:00",
+    "status": "open",
+    "zone": "\ud83d\udfe2 prime",
+    "features": {
+      "RSI": 52.38,
+      "Volx20d": 0.34,
+      "Composite": 0.903
+    }
+  },
+  "FEMY_20251108T173721_b8d294": {
+    "ticker": "FEMY",
+    "entry": 1.0099,
+    "stop": 0.8834,
+    "take": 1.3172,
+    "date": "2025-11-08T17:37:21.248048+00:00",
+    "status": "open",
+    "zone": "\ud83d\udfe1 warm",
+    "features": {
+      "RSI": 71.08,
+      "Volx20d": 1.02,
+      "Composite": 0.934
+    }
+  },
+  "EOSE_20251108T173722_609c06": {
+    "ticker": "EOSE",
+    "entry": 17.7914,
+    "stop": 15.823,
+    "take": 22.5716,
+    "date": "2025-11-08T17:37:22.637381+00:00",
+    "status": "open",
+    "zone": "\ud83d\udfe2 prime",
+    "features": {
+      "RSI": 64.97,
+      "Volx20d": 1.59,
+      "Composite": 0.823
+    }
+  }
+}
