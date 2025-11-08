@@ -138,7 +138,7 @@ def embed_buy(tkr: str, plan: Dict[str, Any], conf: int, reason: str) -> Dict[st
             ],
             "timestamp": utciso()
         }]}
-    }
+    
 
 def embed_open_trade(tkr: str, plan: Dict[str, Any], conf: int) -> Dict[str, Any]:
     desc = (
@@ -669,3 +669,4 @@ if __name__ == "__main__":
     import uvicorn
     ensure_state_files()
     uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT","8000")))
+
