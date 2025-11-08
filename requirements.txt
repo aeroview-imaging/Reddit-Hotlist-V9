@@ -1,0 +1,12 @@
+# requirements.txt for reddit_hotlist_v9_ai.py
+fastapi
+uvicorn[standard]
+requests
+praw
+prawcore
+numpy
+pandas
+yfinance
+nltk
+python-dotenv
+openai
