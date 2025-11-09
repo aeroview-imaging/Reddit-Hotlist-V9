@@ -111,6 +111,11 @@ def safe_run_core():
     print("⚙️ Running v8_5 core with fault-tolerance enabled...")
     try:
         core.run_once(loop_hint=True)
+    except RuntimeError as e:
+        print(f"⚠️ Core stopped early due to: {e}")
+        time.sleep(10)
+        return
+
     except Exception as e:
         print("❌ Core run_once crashed:", e)
         traceback.print_exc()
@@ -223,3 +228,4 @@ if __name__ == "__main__":
     port = int(os.getenv("PORT", "10000"))
     print(f"🌐 Flask keep-alive on 0.0.0.0:{port}")
     app.run(host="0.0.0.0", port=port, debug=False)
+
