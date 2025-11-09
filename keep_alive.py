@@ -2,7 +2,8 @@
 from flask import Flask
 from threading import Thread
 import os, time
-from reddit_hotlist_v9_0_ai import run_cycle  # import your main bot function
+from reddit_hotlist_v9_2_ai import run_cycle
+  # import your main bot function
 
 app = Flask(__name__)
 
@@ -28,4 +29,5 @@ def keep_alive():
 
 if __name__ == "__main__":
     keep_alive()
+
 
