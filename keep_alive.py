@@ -1,34 +1,53 @@
-# keep_alive.py
-from flask import Flask
-from threading import Thread
-import os, time
-from reddit_hotlist_v9_3_ai import run_cycle
-  # import your main bot function
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+keep_alive.py
+Persistent Flask heartbeat + hourly Reddit Hotlist runner for Render.
+
+- GET /health  -> "ok"
+- POST/GET /run -> triggers one v9 cycle immediately (non-overlapping)
+"""
+
+import os
+import threading
+import time
+import requests
+from flask import Flask, jsonify
+from reddit_hotlist_v9_3_ai import run_cycle  # import your latest version here
 
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return "🚀 Reddit Hotlist v9 is live and running hourly!"
+# --- Simple health endpoint ---
+@app.get("/health")
+def health():
+    return jsonify({"status": "ok"})
 
-def run_bot():
+@app.get("/")
+def root():
+    return jsonify({"service": "reddit_hotlist_v9_3", "status": "running"})
+
+# --- Manual run endpoint ---
+@app.post("/run")
+@app.get("/run")
+def run():
+    status = run_cycle()
+    return jsonify({"result": status})
+
+# --- Background scheduler thread ---
+def run_loop():
     while True:
-        print("🕐 Running hourly Reddit Hotlist scan...")
+        print("🚀 Running hourly Reddit Hotlist v9.3 scan...")
         try:
-            run_cycle()  # this runs your full bot logic
+            run_cycle()
             print("✅ Cycle complete. Sleeping for 1 hour...")
         except Exception as e:
-            print(f"❌ Error during run_cycle: {e}")
-        time.sleep(3600)  # wait 1 hour (3600 seconds)
+            print(f"❌ Cycle failed: {e}")
+        time.sleep(3600)  # wait 1 hour between runs
 
-def keep_alive():
-    # Start Flask server (so Render + UptimeRobot see it as active)
-    Thread(target=lambda: app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 10000)))).start()
-    # Start the trading bot in a background thread
-    Thread(target=run_bot).start()
-
+# --- Start both Flask and loop thread ---
 if __name__ == "__main__":
-    keep_alive()
-
-
+    thread = threading.Thread(target=run_loop, daemon=True)
+    thread.start()
+    app.run(host="0.0.0.0", port=int(os.getenv("PORT", "10000")), debug=False)
 
