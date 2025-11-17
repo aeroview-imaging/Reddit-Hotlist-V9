@@ -25,7 +25,7 @@ def health():
 
 @app.get("/")
 def root():
-    return jsonify({"service": "reddit_hotlist_v9_3", "status": "running"})
+    return jsonify({"service": "reddit_hotlist_v10", "status": "running"})
 
 # --- Manual run endpoint ---
 @app.post("/run")
@@ -37,7 +37,7 @@ def run():
 # --- Background scheduler thread ---
 def run_loop():
     while True:
-        print("🚀 Running hourly Reddit Hotlist v9.3 scan...")
+        print("🚀 Running hourly Reddit Hotlist v10 scan...")
         try:
             run_cycle()
             print("✅ Cycle complete. Sleeping for 1 hour...")
@@ -50,6 +50,7 @@ if __name__ == "__main__":
     thread = threading.Thread(target=run_loop, daemon=True)
     thread.start()
     app.run(host="0.0.0.0", port=int(os.getenv("PORT", "10000")), debug=False)
+
 
 
 
